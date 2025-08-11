@@ -1,0 +1,20 @@
+.menu ul a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.menu ul a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #7f22fe;
+  transition: width 0.3s ease-in-out;
+}
+
+.menu ul a:hover::after {
+  width: 100%;
+}
