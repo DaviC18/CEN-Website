@@ -1,0 +1,8 @@
+.bg-black-transparent {
+  background-color: #000010;
+  background: linear-gradient(
+    182deg,
+    rgba(0, 0, 16, 0) 0%,
+    rgba(0, 0, 16, 1) 100%
+  );
+}

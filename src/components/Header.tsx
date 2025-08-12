@@ -1,6 +1,6 @@
-import Logo from "../../public/Logo-cen 1.png";
 import { InteractiveHoverButton } from "./magicui/interactive-hover-button";
 import "./Header.css";
+import { Instagram } from "lucide-react";
 
 const Header = () => {
   return (
@@ -9,7 +9,7 @@ const Header = () => {
         <div className="w-1/5 flex justify-start gap-[20%]">
           <div>
             <img
-              src={Logo}
+              src="/Logo-cen-1.png"
               alt=""
               style={{
                 width: "80px",
@@ -34,8 +34,19 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <div className="w-3/5 flex justify-center items-center"></div>
-        <div className="w-1/5 flex items-center">
+        <div className="w-1/5 flex items-center justify-end gap-5">
+          <a href="https://www.instagram.com/missaocristoemnos?igsh=MWtxNG92MTZtbm5haA==">
+            <Instagram
+              className="cursor-pointer text-white md:w-6 "
+              style={{ width: "24px" }}
+            />
+          </a>
+          <img
+            src="/Vector.svg"
+            alt=""
+            style={{ width: "24px" }}
+            className="cursor-pointer"
+          />
           <InteractiveHoverButton>Instituto</InteractiveHoverButton>
         </div>
       </div>

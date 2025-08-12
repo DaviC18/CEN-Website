@@ -1,16 +1,15 @@
 import Header from "@/components/Header";
-import Logo from "../../public/Logo-cen 1.png";
 import Footer from "@/components/Footer";
 
 const Home = () => {
   return (
     <div className="w-full">
       <Header />
-      <div className="container mx-auto">
+      <div className="container mx-auto mt-5 mb-16 md:px-5 sm:px-5 lg:px-0 ">
         <div className="w-full">
           <div className="w-1/2 flex flex-col justify-between gap-4">
             <img
-              src={Logo}
+              src="/Logo-cen-1.png"
               alt=""
               style={{
                 width: "350px",
