@@ -13,20 +13,20 @@ export const InteractiveHoverButton = React.forwardRef<
     <button
       ref={ref}
       className={cn(
-        "group relative min-w-32 cursor-pointer overflow-hidden rounded-full border-none text-foreground bg-background p-2 px-6 text-center font-semibold hover:bg-foreground duration-500 md:max-w-32",
+        "group relative w-auto cursor-pointer border-none overflow-hidden rounded-full border bg-background p-2 px-5 text-center font-semibold duration-500 hover:bg-black",
         className
       )}
       {...props}
     >
-      <div className="flex items-center gap-2">
-        <div className="h-2 w-2 rounded-full bg-foreground  transition-all duration-300 group-hover:scale-[100.8]"></div>
-        <span className="inline-block transition-all duration-300 group-hover:translate-x-12 group-hover:opacity-0">
+      <div className="flex justify-center items-center gap-2">
+        <div className="h-2 w-2 rounded-full bg-primary transition-all duration-300 group-hover:scale-[100.8]"></div>
+        <span className="inline-block transition-all duration-300 group-hover:translate-x-12 group-hover:opacity-0 hover:bg-black">
           {children}
         </span>
       </div>
-      <div className="absolute top-0 z-10 flex h-full w-full translate-x-12 border-none outline-none items-center bg-foreground justify-center gap-2 text-primary-foreground opacity-0 transition-all duration-300 group-hover:-translate-x-5 group-hover:opacity-100">
-        <span>{children}</span>
-        <ArrowRight />
+      <div className="absolute top-0 z-10 px-3 flex h-full w-full translate-x-12 items-center justify-center gap-2 text-primary-foreground opacity-0 transition-all duration-300 group-hover:-translate-x-5 group-hover:opacity-100">
+        <span className="text-violet-600">{children}</span>
+        <ArrowRight className="text-violet-600" />
       </div>
     </button>
   );

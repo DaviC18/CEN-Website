@@ -1,3 +1,14 @@
+:root {
+  --size: 200px;
+  --white: #fff;
+  --blue: #3051f1;
+  --purple: #c92bb7;
+  --red: #f73344;
+  --orange: #fa8e37;
+  --yellow: #fcdf8f;
+  --yellow-to: #fbd377;
+}
+
 .menu ul a {
   position: relative;
   display: inline-block;
@@ -11,10 +22,72 @@
   bottom: 0;
   height: 2px;
   width: 0;
-  background-color: #7f22fe;
+  background-color: #7908e1;
   transition: width 0.3s ease-in-out;
 }
 
 .menu ul a:hover::after {
   width: 100%;
+}
+
+.gradient-instagram {
+  background: radial-gradient(
+      circle farthest-corner at 28% 100%,
+      var(--yellow) 0%,
+      var(--yellow-to) 10%,
+      var(--orange) 22%,
+      var(--red) 35%,
+      transparent 65%
+    ),
+    linear-gradient(145deg, var(--blue) 10%, var(--purple) 70%);
+  background-clip: text; /* Aplica o recorte do fundo ao texto */
+  -webkit-text-fill-color: transparent; /* Torna o texto transparente para exibir o fundo */
+  color: transparent; /* Fallback para navegadores que não suportam background-clip */
+}
+
+label {
+  flex-direction: column;
+  justify-content: center;
+  width: 24px;
+  cursor: pointer;
+}
+
+label span {
+  background: #fff;
+  border-radius: 10px;
+  height: 3px;
+  margin: 3px 0;
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+span:nth-of-type(1) {
+  width: 100%;
+}
+
+span:nth-of-type(2) {
+  width: 50%;
+}
+
+span:nth-of-type(3) {
+  width: 75%;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(1) {
+  transform-origin: bottom;
+  transform: rotatez(45deg) translate(2px, 8px);
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(2) {
+  transform-origin: top;
+  transform: rotatez(-45deg) translate(-4px, 0.5px);
+}
+
+input[type="checkbox"]:checked ~ span:nth-of-type(3) {
+  transform-origin: bottom;
+  width: 50%;
+  transform: translate(8.5px, -15px) rotatez(-45deg);
 }
