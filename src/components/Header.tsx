@@ -1,7 +1,6 @@
 import { InteractiveHoverButton } from "./magicui/interactive-hover-button";
 import "./Header.css";
 import { Instagram, Smartphone } from "lucide-react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
   return (
