@@ -1,19 +1,14 @@
 import { InteractiveHoverButton } from "./magicui/interactive-hover-button";
 import "./Header.css";
-import { Instagram } from "lucide-react";
+import { Instagram, Smartphone } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
   return (
-    <div className="w-full py-5 ">
-      <div className="px-3">
+    <div className="w-full py-5">
+      <div className="px-3 max-sm:">
         <div className="container mx-auto bg-[rgba(255,255,255,0.08)] px-5 py-2 rounded-3xl w-full flex">
           <div className="w-1/5 max-sm:w-1/2 flex justify-start gap-5">
-            <label htmlFor="check" className="hidden max-sm:flex">
-              <input type="checkbox" id="check" />
-              <span></span>
-              <span></span>
-              <span></span>
-            </label>
             <img
               src="/Logo-cen-1.png"
               alt=""
@@ -21,7 +16,7 @@ const Header = () => {
                 width: "80px",
                 cursor: "pointer",
               }}
-              className="md:min-w-24"
+              className="md:min-w-24 max-sm:w-16 max-[]:"
             />
           </div>
           <div className="w-3/5 max-sm:hidden flex justify-center items-center">
@@ -58,12 +53,7 @@ const Header = () => {
               />
             </a>
             <a href="">
-              <img
-                src="/Vector.svg"
-                alt=""
-                style={{ width: "24px" }}
-                className="cursor-pointer md:min-w-6 max-lg:hidden duration-300 hover:scale-110"
-              />
+              <Smartphone className="cursor-pointer md:w-6 hover:text-violet-600 max-lg:hidden text-white duration-300 hover:scale-110 md" />
             </a>
             <InteractiveHoverButton>Instituto</InteractiveHoverButton>
           </div>

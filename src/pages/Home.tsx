@@ -1,11 +1,11 @@
 import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 
 const Home = () => {
   return (
     <div className="w-full">
       <Header />
-      <div className="mt-5 px-5">
+      <div className="mt-5 px-8">
         <div className="w-full container mx-auto flex max-md:flex-col max-md:items-center">
           <div className="w-1/2 max-sm:w-full flex flex-col justify-between max-sm:items-center gap-4">
             <img
@@ -13,7 +13,7 @@ const Home = () => {
               alt=""
               className="w-[350px] max-sm:w-3xs"
             />
-            <p className="text-white text-xl font-normal max-md:text-center">
+            <p className="text-white text-xl font-normal max-md:text-center max-sm:text-xl">
               A Esperança da Glória
             </p>
           </div>
@@ -22,7 +22,7 @@ const Home = () => {
         <div className="w-full container h-full mx-auto my-10">
           <div className="flex justify-end max-md:flex-col max-md: items-center">
             <div className="w-8/10 bg-[rgba(243,243,243,0.03)] border-1 border-gray-400 rounded-2xl">
-              <p className="p-5 text-white text-end max-md:text-center">
+              <p className="p-5 max-sm:p-2.5 text-white text-end max-sm:text-sm max-md:text-center">
                 Amet commodo excepteur labore dolor exercitation adipisicing
                 adipisicing. Deserunt adipisicing consequat qui fugiat
                 exercitation labore laborum sunt reprehenderit dolore laborum
@@ -34,7 +34,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <Footer />
+      <Navbar />
     </div>
   );
 };
