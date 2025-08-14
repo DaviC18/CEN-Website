@@ -22,22 +22,34 @@ const Header = () => {
             <div className="menu flex justify-center items-center max-md:pr-5">
               <ul className="flex gap-5 text-background">
                 <li>
-                  <a href="" className="hover:text-violet-700">
+                  <a
+                    href=""
+                    className="hover:text-violet-700 active:text-violet-600"
+                  >
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="" className="hover:text-violet-700">
+                  <a
+                    href=""
+                    className="hover:text-violet-700 active:text-violet-600"
+                  >
                     História
                   </a>
                 </li>
                 <li>
-                  <a href="" className="hover:text-violet-700">
+                  <a
+                    href=""
+                    className="hover:text-violet-700 active:text-violet-600"
+                  >
                     Contato
                   </a>
                 </li>
                 <li>
-                  <a href="" className="hover:text-violet-700">
+                  <a
+                    href=""
+                    className="hover:text-violet-700 active:text-violet-600"
+                  >
                     Calendário
                   </a>
                 </li>
@@ -47,12 +59,12 @@ const Header = () => {
           <div className="w-1/5 max-sm:w-1/2 flex items-center justify-end gap-5 max-lg:gap-0">
             <a href="https://www.instagram.com/missaocristoemnos?igsh=MWtxNG92MTZtbm5haA==">
               <Instagram
-                className="cursor-pointer md:w-6 hover:text-violet-600 max-lg:hidden text-white duration-300 hover:scale-110 md"
+                className="cursor-pointer md:w-6 hover:text-violet-600 max-lg:hidden text-white duration-300 md"
                 style={{ width: "24px" }}
               />
             </a>
             <a href="">
-              <Smartphone className="cursor-pointer md:w-6 hover:text-violet-600 max-lg:hidden text-white duration-300 hover:scale-110 md" />
+              <Smartphone className="cursor-pointer md:w-6 hover:text-violet-600 max-lg:hidden text-white duration-300" />
             </a>
             <InteractiveHoverButton>Instituto</InteractiveHoverButton>
           </div>
