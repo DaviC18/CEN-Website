@@ -4,7 +4,7 @@ import { Instagram, Smartphone } from "lucide-react";
 
 const Header = () => {
   return (
-    <div className="w-full py-5">
+    <div className="w-full pt-5">
       <div className="px-3 max-sm:">
         <div className="container mx-auto bg-[rgba(255,255,255,0.08)] px-5 py-2 rounded-3xl w-full flex">
           <div className="w-1/5 max-sm:w-1/2 flex justify-start gap-5">

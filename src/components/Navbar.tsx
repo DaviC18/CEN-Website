@@ -4,7 +4,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <div className="navbar max-sm:flex justify-between items-center fixed hidden bottom-6 left-1/2 transform-[translate(-50%)] w-9/10 px-8 py-1 z-30 bg-[rgba(181,0,253,0.06)] backdrop-blur-xl rounded-4xl  ">
+    <div className="navbar max-sm:flex justify-between items-center fixed hidden bottom-4 left-1/2 transform-[translate(-50%)] w-9/10 px-8 py-1 z-30 bg-[rgba(181,0,253,0.06)] backdrop-blur-xl rounded-4xl  ">
       <a className="flex flex-col justify-center items-center cursor-pointer hover:text-violet-600">
         <span>
           <House className="text-white text-xl active:text-violet-600" />

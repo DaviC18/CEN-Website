@@ -2,12 +2,14 @@ import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import "./Home.css";
 import Cen from "../../public/image.png";
+import Footer from "@/components/Footer";
 
 const Home = () => {
   return (
     <div className="w-full">
       <Header />
-      <div className="mt-5 px-8 pt-[4px]">
+      src={}
+      <div className="px-8 pt-[4px] pb-3">
         <div className="w-full container mx-auto flex max-md:flex-col max-md:gap-5 pb-5 max-md:items-center">
           <div className="w-1/2 max-sm:w-full flex flex-col justify-between max-sm:items-center gap-4">
             <img
@@ -25,13 +27,13 @@ const Home = () => {
                 <img
                   src={Cen}
                   alt=""
-                  className="w-9/10 h-9/10 object-cover z-10 block rounded-2xl box-shadow"
+                  className="w-9/10 h-9/10 object-cover z-10 block rounded-2xl box-shadow duration-300 hover:scale-[1.03]"
                 />
               </div>
             </div>
           </div>
         </div>
-        <div className="w-full container h-full mx-auto mt-10 max-md:mt-2 py-5 ">
+        <div className="w-full container h-full mx-auto mt-10 max-md:mt-2 pt-1 pb-5 max-sm:pb-16 ">
           <div className="flex max-md:flex-col justify-end items-center">
             <div className="p-5 w-8/10 max-sm:w-full bg-[rgba(243,243,243,0.03)] backdrop-blur-2xl max-sm:text-center border border-white text-center rounded-2xl">
               <p className="max-sm:p-2.5 text-white max-sm:text-sm ">
@@ -46,6 +48,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Footer />
       <Navbar />
     </div>
   );
