@@ -59,12 +59,12 @@ const Header = () => {
           <div className="w-1/5 max-sm:w-1/2 flex items-center justify-end gap-5 max-lg:gap-0">
             <a href="https://www.instagram.com/missaocristoemnos?igsh=MWtxNG92MTZtbm5haA==">
               <Instagram
-                className="cursor-pointer md:w-6 hover:text-violet-600 max-lg:hidden text-white duration-300 md"
+                className="cursor-pointer md:w-6 hover:text-violet-600 max-lg:hidden text-white"
                 style={{ width: "24px" }}
               />
             </a>
             <a href="">
-              <Smartphone className="cursor-pointer md:w-6 hover:text-violet-600 max-lg:hidden text-white duration-300" />
+              <Smartphone className="cursor-pointer md:w-6 hover:text-violet-600 max-lg:hidden text-white" />
             </a>
             <InteractiveHoverButton>Instituto</InteractiveHoverButton>
           </div>
