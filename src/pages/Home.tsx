@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Navbar from "@/components/Navbar";
 import "./Home.css";
+import Cen from "../../public/image.png";
 
 const Home = () => {
   return (
@@ -22,7 +23,7 @@ const Home = () => {
             <div className="w-7/10 max-md:w-8/10 bg-[rgba(255,255,255,0.08)] rounded-2xl">
               <div className="relative w-full h-full flex justify-center items-center">
                 <img
-                  src="/public/image.png"
+                  src={Cen}
                   alt=""
                   className="w-9/10 h-9/10 object-cover z-10 block rounded-2xl box-shadow"
                 />
