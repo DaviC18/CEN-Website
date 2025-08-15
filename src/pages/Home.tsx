@@ -32,7 +32,7 @@ const Home = () => {
           </div>
         </div>
         <div className="w-full container h-full mx-auto mt-10 max-md:mt-2 py-5 ">
-          <div className="flex max-md:flex-col justify-center items-center">
+          <div className="flex max-md:flex-col justify-end items-center">
             <div className="p-5 w-8/10 max-sm:w-full bg-[rgba(243,243,243,0.03)] backdrop-blur-2xl max-sm:text-center border border-white text-center rounded-2xl">
               <p className="max-sm:p-2.5 text-white max-sm:text-sm ">
                 "Se reconstruo o que destruí, provo que sou transgressor. Pois,
