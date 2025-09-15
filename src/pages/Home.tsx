@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="w-full">
       <Header />
-      <div className="px-8 pt-[4px] pb-3">
+      <div className="px-8 pt-[28px] pb-3">
         <div className="w-full container mx-auto flex max-md:flex-col max-md:gap-5 pb-5 max-md:items-center">
           <div className="w-1/2 max-sm:w-full flex flex-col justify-between max-sm:items-center gap-4">
             <img
