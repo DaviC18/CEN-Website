@@ -8,7 +8,6 @@ const Home = () => {
   return (
     <div className="w-full">
       <Header />
-      src={}
       <div className="px-8 pt-[4px] pb-3">
         <div className="w-full container mx-auto flex max-md:flex-col max-md:gap-5 pb-5 max-md:items-center">
           <div className="w-1/2 max-sm:w-full flex flex-col justify-between max-sm:items-center gap-4">
@@ -21,7 +20,7 @@ const Home = () => {
               A Esperança da Glória
             </p>
           </div>
-          <div className="w-1/2 max-md:w-full  flex justify-center">
+          <div className="w-1/2 max-md:w-full flex justify-end max-sm:justify-center">
             <div className="w-7/10 max-md:w-8/10 bg-[rgba(255,255,255,0.08)] rounded-2xl">
               <div className="relative w-full h-full flex justify-center items-center">
                 <img
@@ -34,7 +33,7 @@ const Home = () => {
           </div>
         </div>
         <div className="w-full container h-full mx-auto mt-10 max-md:mt-2 pt-1 pb-5 max-sm:pb-16 ">
-          <div className="flex max-md:flex-col justify-end items-center">
+          <div className="flex flex-col max-md:justify-center justify-end items-center">
             <div className="p-5 w-8/10 max-sm:w-full bg-[rgba(243,243,243,0.03)] backdrop-blur-2xl max-sm:text-center border border-white text-center rounded-2xl">
               <p className="max-sm:p-2.5 text-white max-sm:text-sm ">
                 "Se reconstruo o que destruí, provo que sou transgressor. Pois,
